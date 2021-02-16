@@ -29,6 +29,13 @@ module.exports = {
             ],
           },
           {
+            test: /\.css$/i,
+            use: [
+              "style-loader",
+              "css-loader"
+            ],
+          },
+          {
             test: /\.(png|jpe?g|gif)$/i,
             use: [
               {
@@ -42,7 +49,7 @@ module.exports = {
             use: {
               loader: "babel-loader",
               options: {
-                presets: ['@babel/preset-env']
+                presets: ['@babel/preset-env', "@babel/preset-react"]
               }
             }
           },
