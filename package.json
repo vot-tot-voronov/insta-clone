@@ -4,12 +4,25 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "webpack"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vot-tot-voronov/insta-clone.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vot-tot-voronov/insta-clone/issues"
+  },
+  "homepage": "https://github.com/vot-tot-voronov/insta-clone#readme",
   "devDependencies": {
+    "@babel/core": "^7.12.16",
+    "@babel/preset-env": "^7.12.16",
+    "@babel/preset-react": "^7.12.13",
+    "babel-loader": "^8.2.2",
     "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^5.0.2",
     "file-loader": "^6.2.0",
@@ -18,6 +31,12 @@
     "sass-loader": "^11.0.1",
     "style-loader": "^2.0.0",
     "webpack": "^5.22.0",
-    "webpack-cli": "^4.5.0"
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
   }
 }
