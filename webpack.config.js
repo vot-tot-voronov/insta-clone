@@ -3,7 +3,6 @@ const Dotenv = require('dotenv-webpack');
 const {CleanWebpackPlugin} = require('clean-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
-
 module.exports = {
     mode: "development",
     entry: ["@babel/polyfill", "./src/index.jsx"],
@@ -15,6 +14,7 @@ module.exports = {
         contentBase: path.join(__dirname, 'dist'),
         compress: true,
         port: 3000,
+        historyApiFallback: true
     },
     plugins: [
         new HtmlWebpackPlugin({template: "./src/index.html"}),
