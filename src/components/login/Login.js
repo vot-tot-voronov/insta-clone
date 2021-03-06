@@ -1,9 +1,9 @@
 import React from 'react'
 
-export const App = () => {
+export const Login = () => {
     return (
         <div>
-            Let's start!
+            Login form
         </div>
     )
 }
