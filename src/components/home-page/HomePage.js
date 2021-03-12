@@ -1,9 +1,14 @@
-import React from 'react'
+import React from 'react';
+import {Container, Grid, Image, Button} from 'semantic-ui-react';
+import {Header} from '../header/Header';
+
 
 export const HomePage = () => {
     return (
-        <div>
-            HomePage
-        </div>
+        <Container>
+            <Grid padded>
+                <Header />
+            </Grid>
+        </Container>
     )
 }

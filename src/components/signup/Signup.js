@@ -40,7 +40,7 @@ export const Signup = () => {
                     </Form>
                 </Segment>
                 <Message color="purple">
-                    Already have an account? <Link to="/login">Log in</Link>
+                    Already a member? <Link to="/login">Sign in</Link>
                 </Message>
             </Grid.Column>
         </Grid>

@@ -33,7 +33,7 @@ export const Login = () => {
                     </Form>
                 </Segment>
                 <Message color="purple">
-                    Don't have an account? <Link to="/signup">Sign up</Link>
+                    Not a member yet? <Link to="/signup">Sign up</Link>
                 </Message>
             </Grid.Column>
         </Grid>
