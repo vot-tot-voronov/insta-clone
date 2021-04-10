@@ -1,0 +1,22 @@
+.currentPost {
+    height: 100vh;
+    position: relative;
+    background-color: rgb(214, 214, 214, 0.28);
+    &__block {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 45rem;
+        width: 100%;
+    }
+    &__tools {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__btn {
+        &--send {
+            margin-top: 2rem;
+        }
+    }
+}
