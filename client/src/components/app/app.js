@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import {HomePage} from '../home-page/HomePage';
 import {Signup} from '../signup/Signup';
 import {Login} from '../login/Login';
-import { CurrentPost } from '../current-post/CurrentPost';
+import CurrentPost from '../current-post';
 import 'semantic-ui-css/semantic.min.css';
 import './app.scss';
 

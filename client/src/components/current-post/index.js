@@ -3,8 +3,7 @@ import { Image, Button, Segment, Icon } from 'semantic-ui-react';
 import { CommentComponent } from '../comment/CommentComponent';
 import ph1 from '../../img/ph2.jpg';
 
-
-export const CurrentPost = () => {
+const CurrentPost = () => {    
     return (
         <div className="currentPost">
             <div className="currentPost__block">
@@ -23,3 +22,4 @@ export const CurrentPost = () => {
         </div>
     )
 };
+export default CurrentPost;
