@@ -1,14 +1,18 @@
 .currentPost {
     position: absolute;
+    top: 0;
     width: 100%;
     padding: 2rem;
-    background-color: rgb(214, 214, 214, 0.45);
+    background-color: rgb(45 44 44 / 80%);
     display: flex;
     justify-content: center;
     align-items: center;
     &__block {
         max-width: 53rem;
         width: 100%;
+        background-color: #d6d6d6;
+        border: .3rem solid white;
+        padding: 1rem;
     }
     &__tools {
         display: flex;

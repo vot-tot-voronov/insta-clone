@@ -1,5 +1,5 @@
 import React from 'react';
-import {useHistory, useParams} from 'react-router-dom';
+import {useHistory, useParams } from 'react-router-dom';
 import { Image, Button, Segment, Icon } from 'semantic-ui-react';
 import { CommentComponent } from '../comment/CommentComponent';
 import ph1 from '../../img/ph1.jpg';
@@ -12,10 +12,12 @@ const objPhotos = [
     {ph: ph3, id: 2}
 ];
 
-const CurrentPost = () => {  
+export const CurrentPost = () => {  
     const history = useHistory();
     const {id} = useParams();
+    console.log(id)
     const image = objPhotos[parseInt(id, 10)];
+    const number = parseInt(id, 10);
 
     const back = e => {
         e.stopPropagation();
@@ -40,4 +42,3 @@ const CurrentPost = () => {
         </div>
     )
 };
-export default CurrentPost;

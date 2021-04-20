@@ -1,9 +1,9 @@
 import React from 'react';
-import { Route, Switch, useLocation } from "react-router-dom";
+import { Route, Switch, useLocation, Redirect } from "react-router-dom";
 import {HomePage} from '../home-page/HomePage';
 import {Signup} from '../signup/Signup';
 import {Login} from '../login/Login';
-import CurrentPost from '../current-post';
+import {CurrentPost} from '../current-post/CurrentPost';
 import 'semantic-ui-css/semantic.min.css';
 import './app.scss';
 
@@ -13,11 +13,11 @@ export const App = () => {
     return (
         <>
             <Switch location={background || location}>
-                <Route exact path="/" children={<HomePage />} />
-                <Route path="/signup" children={Signup} />
-                <Route path="/login" children={Login} />
-                <Route path="/current" children={CurrentPost} />
-                <Route path="/user" children={HomePage} />
+                <Route exact path="/" component={HomePage} />
+                <Route path="/signup" component={Signup} />
+                <Route path="/login" component={Login} />
+                {/* <Route path="/posts/:id" children={<CurrentPost />} /> */}
+                <Redirect to="/signup" />
             </Switch>
             {background && <Route path="/posts/:id" children={<CurrentPost />} />}
         </>
